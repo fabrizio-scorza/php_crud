@@ -11,7 +11,7 @@ $conn = new mysqli(DB_SERVERNAME, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
 //controllo sulla connesione
 
-if ($conn && $conn->connect_error){
+if ($conn->connect_error){
     echo("connection failed: " . $conn->connect_error);
 }
 
