@@ -1,5 +1,4 @@
 <?php
-
 //query per creare la tabella user
 $sql = " CREATE TABLE IF NOT EXISTS users (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -9,9 +8,8 @@ $sql = " CREATE TABLE IF NOT EXISTS users (
 )";
 
 //esecuzione e controllo della query
-if($conn->query($sql) === TRUE) {
-    echo "'users' table has been created successfully!";
-} else {
+if($conn->query($sql) === FALSE) {
+
     echo "ERROR 'users' table was not created! ERROR: " .$conn->error; 
 }
 

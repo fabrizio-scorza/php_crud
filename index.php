@@ -28,6 +28,7 @@ if (!$result) {
 <body>
     <!-- tabella degli utenti -->
      <h2>Users List</h2>
+     <button><a href="./pages/createPage.php"> New User</a></button>
      <table>
         <tr>
             <th>Id</th>
@@ -43,7 +44,7 @@ if (!$result) {
                     <td><?php echo $row['username']; ?></td>
                     <td><?php echo $row['email']; ?></td>
                     <td>
-                        <button>update</button>
+                        <button><a href="./pages/updatePage.php"></a>update</button>
                         <button>delete</button>
                     </td>
                 </tr>
